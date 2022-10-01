@@ -23,3 +23,6 @@ def sqr(x):
 
 def cos(x):
     return math.cos(x)
+
+def sin(x):
+    return math.sin(x)
