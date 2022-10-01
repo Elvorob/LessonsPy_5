@@ -185,7 +185,7 @@ import functools
 #
 # 4.3.Используя лямбда - выражение, из списка my_list = [20, -3, 15, 2, -1, -21]
 # создайте новый список, содержащий только положительные числа
-# my_list = [20, -3, 15, 2, -1, -21]
+my_list = [20, -3, 15, 2, -1, -21]
 l1 = list(filter(lambda x: x>=0, my_list))
 print(l1)
 # #
@@ -200,6 +200,9 @@ print(my_calc.sqrt(5))
 print(my_calc.mult(3,4))
 print(my_calc.sum_it(5,5))
 print(my_calc.substr(12,6))
+print(my_calc.sqr(5))
+print(f'sin: {my_calc.sin(10)}')
+print(f'cos: {my_calc.cos(10)}')
 
 def test_calc():
     assert my_calc.div(10,5) == 2, f'Wrong number, actual result is {my_calc.div(10,5)}'

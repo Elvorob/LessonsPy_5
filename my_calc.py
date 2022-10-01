@@ -26,3 +26,4 @@ def cos(x):
 
 def sin(x):
     return math.sin(x)
+
