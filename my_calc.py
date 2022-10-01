@@ -17,3 +17,6 @@ def div(x, y):
 
 def sqrt(x):
     return round(math.sqrt(x), 2)
+
+def sqr(x):
+    return x*x
