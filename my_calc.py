@@ -20,3 +20,6 @@ def sqrt(x):
 
 def sqr(x):
     return x*x
+
+def sin(x):
+    return math.sin(x)
