@@ -20,3 +20,6 @@ def sqrt(x):
 
 def sqr(x):
     return x*x
+
+def cos(x):
+    return math.cos(x)
