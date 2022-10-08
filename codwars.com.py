@@ -1,6 +1,8 @@
 # def move(position, roll):
 #     # your code here
 #     return position + roll * 2
+import functools
+
 
 # def past(h, m, s):
 #     # Good Luck!
@@ -59,6 +61,132 @@
 # "ACSKLDFJSGSKLDFJSKLDFJ" -> True
 # In this Kata, a string is said to be in ALL CAPS whenever it does not contain any lowercase letter
 # so any string containing no letters at all is trivially considered to be in ALL CAPS.
-def is_uppercase(inp):
-    return inp == inp.upper()
-print(is_uppercase('"+>g_#HQxmiX{c3`U!.2<\)Nz1*:Oh?}~$b/7'))
+# def is_uppercase(inp):
+#     return inp == inp.upper()
+# print(is_uppercase('"+>g_#HQxmiX{c3`U!.2<\)Nz1*:Oh?}~$b/7'))
+
+# def test_input(name):
+#     name = input()
+#     return name
+# print(test_input('Лена'))
+# b = -456;
+# c = str(b);
+# x = list(c);
+# print(x)
+# def sum_digits(number):
+#     if number < 0:
+#         number *= -1
+#     list1 = list(str(number))
+#     return int(functools.reduce(lambda x,y: int(x)+int(y), list1))
+# print(sum_digits(0))
+
+# def sum_digits(number):
+#     a = str(abs(number))
+#     print(type(a))
+#     sum = 0
+#     for x in a:
+#         print(x)
+#         print(type(x))
+#         sum += int(x)
+#     return sum
+#
+# print(sum_digits(13))
+
+
+# def solution(string):
+#     return string[::-1]
+#
+# print(solution('Elena Vorobyeva'))
+#
+# def is_triangle(a, b, c):
+#     if a < (b + c) and b < (a + c) and c < (a + b):
+#         return True
+#     return False
+# print(is_triangle(7,2,2))
+
+# def is_lucky(n):
+#     sum1 = 0
+#     n = str(n)
+#     for num in n:
+#         sum1 += int(num)
+#     if sum1 % 9 == 0:
+#         return True
+#     return False
+# print(is_lucky(0))
+
+# def calculator(a,b,sign):
+#     if type(a) == int and type(b) == int:
+#         if sign == '+': return a+b
+#         elif sign == "-": return a-b
+#         elif sign == "*": return a*b
+#         elif sign == "/": return a/b
+#         else: return 'unknown value'
+#     return 'unknown value'
+# print(calculator(1,2,'+'))
+#
+# a = 5
+# print(type(a))
+
+# def owned_cat_and_dog(cat_years, dog_years):
+#     ownedCat = 0
+#     while cat_years >= 15 and ownedCat == 0:
+#         cat_years -= 15
+#         ownedCat += 1
+#     while cat_years >= 9 and ownedCat == 1:
+#         cat_years -= 9
+#         ownedCat += 1
+#     ownedCat += (ownedCat == 2)*cat_years // 4
+#     ownedDog = 0
+#     while dog_years >=15 and ownedDog ==0:
+#         dog_years -= 15
+#         ownedDog += 1
+#     while dog_years >= 9 and ownedDog == 1:
+#         dog_years -= 9
+#         ownedDog +=1
+#     ownedDog += (ownedDog == 2)*dog_years // 5
+#     return [ownedCat, ownedDog]
+#
+# def owned_cat_and_dog(cat_years, dog_years):
+#     cat = 0;
+#     dog = 0;
+#     # cat's year
+#     if cat_years >= 15 and cat_years < 24:
+#         cat += 1
+#     elif cat_years >= 24 and cat_years < 28:
+#         cat += 2
+#     elif cat_years >= 28:
+#         cat = 3 + (cat_years - 28)//4
+#     # dog's year
+#     if dog_years >= 15 and dog_years < 24:
+#         dog += 1
+#     elif dog_years >= 24 and dog_years < 29:
+#         dog += 2
+#     elif dog_years >= 29:
+#         dog = 3 + (dog_years - 29)//5
+#     return [cat, dog]
+# print(owned_cat_and_dog(56,64))
+
+# def function(start_num, end_num):
+#     return list(range(start_num, end_num, 1))
+# print(function(2,9))
+
+# def check(seq, elem):
+#     for x in seq:
+#         if x == elem:
+#             return True
+#     return False
+# print(check([80, 117, 115, 104, 45, 85, 112, 115], 45))
+
+def filter_lucky(lst):
+    res = []
+    res1 =[]
+    for x in lst:
+        x1=list(str(x))
+        for i in x1:
+            if i == '7':
+                res.append(x)
+    for n in res:
+        if n not in res1:
+            res1.append(n)
+    return res1
+print(filter_lucky([157358, 83527, 192743, 136667, 26075, 175511, 137853, 39407, 92537, 173481, 193007, 171132, 137428, 5879, 131547, 148672, 101755, 117623, 76416, 156307, 170685, 80074, 88798, 30170, 85878, 157870, 134706, 72705, 76857, 197305, 76205, 187630, 10758, 17889, 27832, 77858, 7220, 151274, 176742, 87663, 168277, 173854, 183674, 55617, 86793, 47102, 164817, 170994, 170633, 189746, 131397, 57963, 197401, 76769, 49375, 163731, 74978, 68079, 183337, 33278, 87474, 128783, 69746, 23795, 9727, 88276, 66732, 157594, 173651, 73172, 80907, 96705, 191795, 47766, 177975, 72287, 111337, 4771, 123617, 176557, 98837, 5074, 14768, 57594, 114176, 189447, 70401, 150715, 130970, 170550, 19427, 100873, 87066, 64722, 71759, 88972, 147978, 157860, 179722, 35715, 100479, 8733, 40372, 152275, 109271, 157395, 134175, 163797, 70609, 38473, 150075, 84971, 70992, 126708, 187180, 75022, 17940, 153987, 69702, 149758, 107940, 178500, 182037, 92743, 184702, 82735, 176692, 124727, 44757, 35746, 97260, 143729, 159731, 6720, 187591, 114178, 40776, 100474, 177871, 41637, 177262, 108971, 138187, 71011, 74704, 172022, 102587, 181217, 73711, 171059, 175738, 187409, 177549, 63367, 167941, 102778, 47432, 36702, 88768, 74298, 69927, 173850, 120782]))

@@ -60,12 +60,12 @@
 # print(f' ID: {id(nums)}')
 # #
 # # slising
-# letters = ['a', 'b', 'c', 'd', 'e', 'f']
-# print(letters[0:-1:2])
-# print(letters[-3])
-# print(letters[::-1])
-# print(letters[1:-1])
-# print(letters[2:])
+letters = ['a', 'b', 'c', 'd', 'e', 'f']
+print(letters[0:-1:2])
+print(letters[-3])
+print(letters[::-1])
+print(letters[1:-1])
+print(letters[2:])
 #
 # # list comprehension
 # l = [1, 2, 3, 4, 5]
