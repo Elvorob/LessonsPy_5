@@ -43,7 +43,7 @@
 # print (sorted(str1,reverse=True))
 # #
 # print('SORTED()')
-# nums1=sorted(nums)
+# nums1 = sorted(nums)
 # print(f'New sorted list% {nums1}')
 # print(f'initial list: {nums}')
 # print(f' ID: {id(nums1)}')
@@ -53,19 +53,19 @@
 # print(f'New sorted list: {nums1}') # none
 # print(f'initial list: {nums}')
 # print(f' ID: {id(nums)}')
-# #
+# # #
 # print('.REVERSE()')
 # print(nums.reverse())
 # print(nums)
 # print(f' ID: {id(nums)}')
 # #
 # # slising
-letters = ['a', 'b', 'c', 'd', 'e', 'f']
-print(letters[0:-1:2])
-print(letters[-3])
-print(letters[::-1])
-print(letters[1:-1])
-print(letters[2:])
+# letters = ['a', 'b', 'c', 'd', 'e', 'f']
+# print(letters[0:-1:2])
+# print(letters[-3])
+# print(letters[::-1])
+# print(letters[1:-1])
+# print(letters[2:])
 #
 # # list comprehension
 # l = [1, 2, 3, 4, 5]
@@ -219,27 +219,27 @@ from itertools import count
 # 3.2 Дан список list_1 = ['Hi', 'ananas', 2, None, 75, 'pizza', 36, 100]
 #    - получите сумму всех чисел,
 #    - распечатайте все строки, где есть буква 'a'
-list_1 = ['Hi', 'ananas', 2, None, 75, 'pizza', 36, 100]
-print(type(list_1[2]))
-# 1
-# sum_l = 0
-# for x in list_1:
-#     if type(x) == int:
-#         sum_l = sum_l + x
-# print(sum_l)
-# 2
-# первый вариант решения
-matches = []
-for match in list_1:
-    if type(match) == str:
-        if "a" in match:
-            matches.append(match)
-print(matches)
-# второй вариант решения
-matches = [match for match in list_1 if type(match) == str and "a" in match]
-print(matches)
-# решение третий вариант, подсказан в группе пайтон
-print(f'Task 3.2.2 answer: {[l1_item for l1_item in list_1 if "a" in str(l1_item)]}')
+# list_1 = ['Hi', 'ananas', 2, None, 75, 'pizza', 36, 100]
+# print(type(list_1[2]))
+# # 1
+# # sum_l = 0
+# # for x in list_1:
+# #     if type(x) == int:
+# #         sum_l = sum_l + x
+# # print(sum_l)
+# # 2
+# # первый вариант решения
+# matches = []
+# for match in list_1:
+#     if type(match) == str:
+#         if "a" in match:
+#             matches.append(match)
+# print(matches)
+# # второй вариант решения
+# matches = [match for match in list_1 if type(match) == str and "a" in match]
+# print(matches)
+# # решение третий вариант, подсказан в группе пайтон
+# print(f'Task 3.2.2 answer: {[l1_item for l1_item in list_1 if "a" in str(l1_item)]}')
 #
 # 3.3. Превратите лист ['cat', 'dog', 'horse, 'cow'] в кортеж
 # list = ['cat', 'dog', 'horse', 'cow']
